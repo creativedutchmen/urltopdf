@@ -68,7 +68,7 @@
 		private static function initPDF() {
 			require_once(EXTENSIONS . '/urltopdf/lib/MPDF53/mpdf.php');
 
-			$pdf = new mpdf();
+			$pdf = new mpdf('', 'A4');
 
 			return $pdf;
 		}
